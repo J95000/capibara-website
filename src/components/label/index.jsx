@@ -10,18 +10,20 @@ import './index.css';
  * @returns {*} Generic Label
  */
 function Label(props) {
-	const { labelContent } = props;
+	const { labelContent, size} = props;
 	return (
-		<SemanticLabel content={labelContent} className={"label"}/>
+		<SemanticLabel content={labelContent} className={`ui ${size} label`} />
 	);
 }
 
 export default Label;
 
 Label.propTypes = {
-	labelContent: PropTypes.string
+	labelContent: PropTypes.string,
+	size: PropTypes.string
 };
 
 Label.defaultProps = {    
-    labelContent: "Hello World"
+    labelContent: "Hello World",
+	size: "large"
 };
