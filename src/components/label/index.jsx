@@ -10,18 +10,23 @@ import './index.css';
  * @returns {*} Generic Label
  */
 function Label(props) {
-	const { labelContent } = props;
+	const { labelContent, size, labelTextColorHex, labelBackgroundColor} = props;
 	return (
-		<SemanticLabel content={labelContent} className={"label"}/>
+		<SemanticLabel content={labelContent} className={`ui ${size} label`} style={{color: labelTextColorHex}} color={labelBackgroundColor} />
 	);
 }
 
 export default Label;
 
 Label.propTypes = {
-	labelContent: PropTypes.string
+	labelContent: PropTypes.string,
+	size: PropTypes.string,
+	labelTextColorHex: PropTypes.string,
+	labelBackgroundColor: PropTypes.string
 };
 
 Label.defaultProps = {    
-    labelContent: "Hello World"
+    labelContent: "Hello World",
+	size: "large",
+	labelTextColorHex: "#000000"
 };
