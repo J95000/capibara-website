@@ -1,0 +1,12 @@
+.icon {
+    display: flex;
+    margin: 5px;
+}
+
+.icon.bg-dark-green {
+    background-color: #003326 !important;
+}
+
+.icon.white {
+    color: white !important;
+}
