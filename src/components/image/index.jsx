@@ -9,20 +9,24 @@ import './index.css';
  * @returns A Generic Image
  */
 function Image(props) {
-    const { imageHeight, imageSrc } = props;
+    const { imageClassName, imageHeight, imageSrc, imageAlt } = props;
     return (
-        <SemanticImage className={"image"} height={imageHeight} src={imageSrc}/>
+        <SemanticImage className={"image " + imageClassName} height={imageHeight} src={imageSrc} alt={imageAlt}/>
     );
 }
 
 export default Image;
 
 Image.propTypes = {
+    imageClassName: PropTypes.string,
     imageHeight: PropTypes.string,
-    imageSrc: PropTypes.string
+    imageSrc: PropTypes.string,
+    imageAlt: PropTypes.string
 };
 
 Image.defaultProps = {
+    imageClassName: "",
     imageHeight: "240px",
-    imageSrc: ""
+    imageSrc: "",
+    imageAlt: "Capybara"
 };
