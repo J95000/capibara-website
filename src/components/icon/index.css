@@ -1,12 +1,11 @@
 .icon {
     display: flex;
-    margin: 5px;
 }
 
 .icon.bg-dark-green {
-    background-color: #003326 !important;
+    background-color: var(--color-capybara-darker-green) !important;
 }
 
 .icon.white {
-    color: white !important;
+    color: var(--color-white) !important;
 }

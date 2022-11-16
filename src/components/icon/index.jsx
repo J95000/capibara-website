@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 import { Icon as SemanticIcon } from 'semantic-ui-react';
 import './index.css';
 
+/**
+ * Generic component for Icon
+ * @param {*} props  The Properties this Semantic Icon needs
+ * @returns A Generic Icon
+ */
 function Icon(props) {
 	const { iconName, iconColor, iconBackgroundColor, iconSize, iconBordered } = props;
 	return (
-		<>
-        	<SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
-		</>
+        <SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
 	);
 }
 
