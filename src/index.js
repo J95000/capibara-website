@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ReactDOMServer from 'react-dom/server';
 import 'semantic-ui-css/semantic.min.css';
 import './themes/index.css';
 import Label from './components/label';
@@ -7,6 +8,7 @@ import Icon from './components/icon';
 import Image from './components/image';
 import Paragraph from './components/paragraph';
 import Button from './components/button';
+import Carousel from './components/carousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,5 +40,23 @@ root.render(
         }/>
         <br/>
         <Button className={"ui button"} content={"Option 1"} textColor={"#000000"} href={"https://www.google.es"}/>
+        <br/>
+        <br/>
+        <Carousel carouselMessages={
+            {
+                carouselMessages:[
+                    {
+                        message:"Capibaras",
+                        description:"Son capibaras",
+                        image:ReactDOMServer.renderToString(<Image imageClassName="d-block w-100" imageHeight={"100%"} imageSrc={"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg"} imageAlt={"First slide"}/>)
+                    },
+                    {
+                        message:"Mas Capibaras",
+                        description:"Son mas capibaras",
+                        image:ReactDOMServer.renderToString(<Image imageClassName="d-block w-100" imageHeight={"100%"} imageSrc={"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg"} imageAlt={"Second slide"}/>)
+                    }
+                ]
+            }
+        }/>
     </>
 );
