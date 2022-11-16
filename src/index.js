@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ReactDOMServer from 'react-dom/server';
 import 'semantic-ui-css/semantic.min.css';
 import './themes/index.css';
 import Label from './components/label';
@@ -48,12 +47,22 @@ root.render(
                     {
                         message:"Capibaras",
                         description:"Son capibaras",
-                        image:ReactDOMServer.renderToString(<Image imageClassName="d-block w-100" imageHeight={"100%"} imageSrc={"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg"} imageAlt={"First slide"}/>)
+                        image:{
+                            imageClassName:"d-block w-100",
+                            imageHeight:"100%",
+                            imageSrc:"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg",
+                            imageAlt:"First slide"
+                        }
                     },
                     {
                         message:"Mas Capibaras",
                         description:"Son mas capibaras",
-                        image:ReactDOMServer.renderToString(<Image imageClassName="d-block w-100" imageHeight={"100%"} imageSrc={"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg"} imageAlt={"Second slide"}/>)
+                        image:{
+                            imageClassName:"d-block w-100",
+                            imageHeight:"100%",
+                            imageSrc:"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg",
+                            imageAlt:"Second slide"
+                        }
                     }
                 ]
             }

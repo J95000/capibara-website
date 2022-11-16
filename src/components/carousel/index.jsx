@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
 import { Carousel as BootstrapCarousel } from 'react-bootstrap';
+import Image from '../image';
 import './index.css';
 
 /**
@@ -16,7 +17,7 @@ function Carousel(props) {
     (carouselMessagesJSON).forEach(element => {
         buffer.push(
             <BootstrapCarousel.Item>
-                <div dangerouslySetInnerHTML={{__html: element.image}} />
+                <Image imageClassName={element.image.imageClassName} imageHeight={element.image.imageHeight} imageSrc={element.image.imageSrc} imageAlt={element.image.imageAlt}/>
                 <BootstrapCarousel.Caption>
                     <h3>{element.message}</h3>
                     <p>{element.description}</p>
