@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { Container as SemanticParagraph } from 'semantic-ui-react';
 import './index.css';
 
+/**
+ * Generic component for Container/Paragraph
+ * @param {*} props The Properties this Semantic Container/Paragraph needs
+ * @returns {*} Generic Container/Paragraph
+ */
 function Container(props) {
 	const { paragraphTextAlign, paragraphContent } = props;
 	return (
