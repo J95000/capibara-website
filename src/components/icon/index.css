@@ -1,0 +1,11 @@
+.icon {
+    display: flex;
+}
+
+.icon.bg-dark-green {
+    background-color: var(--color-capybara-darker-green) !important;
+}
+
+.icon.white {
+    color: var(--color-white) !important;
+}
