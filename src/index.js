@@ -5,6 +5,7 @@ import './themes/index.css';
 import Label from './components/label';
 import Icon from './components/icon';
 import Image from './components/image';
+import Button from './components/button';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(  
@@ -18,5 +19,7 @@ root.render(
         <Image imageHeight={"240px"} imageSrc={"https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"}/>
         <br/>
         <Label labelContent={"This is the Official Capybara Website"} />
+        <br/>
+        <Button className={"ui button"} content={"Option 1"} textColor={"#000000"} href={"https://www.google.es"}/>
     </>
 );
