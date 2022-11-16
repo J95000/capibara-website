@@ -6,8 +6,7 @@ import './index.css';
 function Container(props) {
 	const { paragraphTextAlign, paragraphContent } = props;
 	return (
-		<SemanticParagraph className={"paragraph"} textAlign={paragraphTextAlign} content={paragraphContent}>
-		</SemanticParagraph>
+		<SemanticParagraph className={"paragraph"} textAlign={paragraphTextAlign} content={paragraphContent}/>
 	);
 }
 

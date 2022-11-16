@@ -6,6 +6,7 @@ import Label from './components/label';
 import Icon from './components/icon';
 import Image from './components/image';
 import Paragraph from './components/paragraph';
+import Button from './components/button';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,5 +36,7 @@ root.render(
             viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
             Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.`
         }/>
+        <br/>
+        <Button className={"ui button"} content={"Option 1"} textColor={"#000000"} href={"https://www.google.es"}/>
     </>
 );
