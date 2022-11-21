@@ -16,7 +16,7 @@ function Carousel(props) {
     const carouselMessagesJSON = JSON.parse(JSON.stringify(carouselMessages.carouselMessages));
     (carouselMessagesJSON).forEach(element => {
         buffer.push(
-            <BootstrapCarousel.Item>
+            <BootstrapCarousel.Item key={buffer.length}>
                 <Image imageClassName={element.image.imageClassName} imageHeight={element.image.imageHeight} imageSrc={element.image.imageSrc} imageAlt={element.image.imageAlt}/>
                 <BootstrapCarousel.Caption>
                     <h3>{element.message}</h3>
