@@ -23,11 +23,9 @@ function Icon(props) {
 			<SemanticIcon className={"icon social-icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered} onClick={() => handleClick(iconHref ? iconHref : "")}/>
 		);
 	}
-	else {
-		return (
-			<SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
-		);
-	}
+	return (
+		<SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
+	);
 }
 
 export default Icon;
