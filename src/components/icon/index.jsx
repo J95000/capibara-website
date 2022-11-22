@@ -9,9 +9,22 @@ import './index.css';
  * @returns A Generic Icon
  */
 function Icon(props) {
-	const { iconName, iconColor, iconBackgroundColor, iconSize, iconBordered } = props;
+	const { iconName, iconColor, iconBackgroundColor, iconSize, iconBordered, iconHref } = props;
+	const handleClick = (href) => {
+		if(href.includes("mailto:")) {
+			window.location.href = href;
+		}
+		else {
+			window.open(href, '_blank');
+		}
+	}
+	if (iconHref !== undefined) {
+		return (
+			<SemanticIcon className={"icon social-icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered} onClick={() => handleClick(iconHref ? iconHref : "")}/>
+		);
+	}
 	return (
-        <SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
+		<SemanticIcon className={"icon " + iconColor + " " + iconBackgroundColor} name={iconName} size={iconSize} bordered={iconBordered}/>
 	);
 }
 

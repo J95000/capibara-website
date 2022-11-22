@@ -12,10 +12,11 @@ import Carousel from './components/carousel';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-        <Icon iconName={"facebook"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"instagram"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"youtube"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"mail outline"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
+        <Icon iconName={"facebook"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.facebook.com/NGG.com.bo"}/>
+        <Icon iconName={"instagram"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.instagram.com/capybara.tech/"}/>
+        <Icon iconName={"youtube"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.youtube.com/irizam"}/>
+        <Icon iconName={"mail outline"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"mailto:capybaratechcbba@gmail.com"}/>
+        <Icon iconName={"checkmark"} iconColor={"white"} iconBackgroundColor={"bg-gradient-green"} iconSize={"big"} iconBordered={true}/>
         <br/>
         <br/>
         <Image imageHeight={"240px"} imageSrc={"https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"}/>
