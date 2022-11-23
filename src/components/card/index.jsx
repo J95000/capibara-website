@@ -33,3 +33,8 @@ Card.propTypes = {
 	content: PropTypes.string,
     image: PropTypes.any
 };
+
+Card.defaultProps = {
+	content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    image: ""
+};
