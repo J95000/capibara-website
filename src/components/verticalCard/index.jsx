@@ -5,6 +5,11 @@ import Label from '../label';
 import Paragraph from '../paragraph';
 import './index.css';
 
+/**
+ * Generic component for Vertical Card
+ * @param {*} props  The Properties this Vertical Card needs
+ * @returns A Vertical Card
+ */
 function VerticalCard(props) {
 	const { iconComponent, labelComponent, paragraphComponent } = props;
     const iconComponentJSON = JSON.parse(JSON.stringify(iconComponent));
