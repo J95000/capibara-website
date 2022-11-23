@@ -8,6 +8,7 @@ import Image from './components/image';
 import Paragraph from './components/paragraph';
 import Button from './components/button';
 import Carousel from './components/carousel';
+import Card from './components/card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,7 +42,6 @@ root.render(
         <br/>
         <Button className={"ui button"} content={"Option 1"} textColor={"#000000"} href={"https://www.google.es"}/>
         <br/>
-        <br/>
         <Carousel carouselMessages={
             {
                 carouselMessages:[
@@ -68,5 +68,7 @@ root.render(
                 ]
             }
         }/>
+        <br/>
+        <Card content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."} image={<Image imageSrc={"https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"}/>}/>
     </>
 );
