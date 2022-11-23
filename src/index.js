@@ -8,6 +8,7 @@ import Image from './components/image';
 import Paragraph from './components/paragraph';
 import Button from './components/button';
 import Carousel from './components/carousel';
+import VerticalCard from './components/verticalCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -68,5 +69,28 @@ root.render(
                 ]
             }
         }/>
+        <VerticalCard
+            iconComponent={
+                {
+                    iconName:"checkmark",
+                    iconColor:"white",
+                    iconBackgroundColor:"bg-gradient-green",
+                    iconSize:"big",
+                    iconBordered:true
+                }
+            } labelComponent={
+                {
+                    labelContent:"Feature One"
+                }
+            } paragraphComponent={
+                {
+                    paragraphTextAlign:"justified",
+                    paragraphContent:`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                    ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus.`
+                }
+            }
+        />
+        <br/>
     </>
 );

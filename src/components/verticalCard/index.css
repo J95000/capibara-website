@@ -1,0 +1,4 @@
+.vertical-card {
+    display: flex;
+    padding: 10px !important;
+}
