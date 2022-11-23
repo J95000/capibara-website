@@ -1,9 +1,19 @@
 .icon {
     display: flex;
+    border-radius: 15px;
+}
+
+.icon.social-icon {
+    cursor: pointer;
 }
 
 .icon.bg-dark-green {
     background-color: var(--color-capybara-darker-green) !important;
+}
+
+.icon.bg-gradient-green {
+    background: var(--color-capybara-darker-green);
+    background: linear-gradient(0deg, var(--color-capybara-darker-green) 0%, var(--color-capybara-dark-green) 100%);
 }
 
 .icon.white {

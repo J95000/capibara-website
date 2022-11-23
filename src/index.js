@@ -7,15 +7,17 @@ import Icon from './components/icon';
 import Image from './components/image';
 import Paragraph from './components/paragraph';
 import Button from './components/button';
+import Carousel from './components/carousel';
 import Card from './components/card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-        <Icon iconName={"facebook"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"instagram"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"youtube"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
-        <Icon iconName={"mail outline"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true}/>
+        <Icon iconName={"facebook"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.facebook.com/NGG.com.bo"}/>
+        <Icon iconName={"instagram"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.instagram.com/capybara.tech/"}/>
+        <Icon iconName={"youtube"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"https://www.youtube.com/irizam"}/>
+        <Icon iconName={"mail outline"} iconColor={"white"} iconBackgroundColor={"bg-dark-green"} iconSize={"big"} iconBordered={true} iconHref={"mailto:capybaratechcbba@gmail.com"}/>
+        <Icon iconName={"checkmark"} iconColor={"white"} iconBackgroundColor={"bg-gradient-green"} iconSize={"big"} iconBordered={true}/>
         <br/>
         <br/>
         <Image imageHeight={"240px"} imageSrc={"https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"}/>
@@ -39,6 +41,33 @@ root.render(
         }/>
         <br/>
         <Button className={"ui button"} content={"Option 1"} textColor={"#000000"} href={"https://www.google.es"}/>
+        <br/>
+        <Carousel carouselMessages={
+            {
+                carouselMessages:[
+                    {
+                        message:"Capibaras",
+                        description:"Son capibaras",
+                        image:{
+                            imageClassName:"d-block w-100",
+                            imageHeight:"100%",
+                            imageSrc:"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg",
+                            imageAlt:"First slide"
+                        }
+                    },
+                    {
+                        message:"Mas Capibaras",
+                        description:"Son mas capibaras",
+                        image:{
+                            imageClassName:"d-block w-100",
+                            imageHeight:"100%",
+                            imageSrc:"https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_capybara.jpg",
+                            imageAlt:"Second slide"
+                        }
+                    }
+                ]
+            }
+        }/>
         <br/>
         <Card content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."} image={<Image imageSrc={"https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"}/>}/>
     </>
